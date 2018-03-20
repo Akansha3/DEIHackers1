@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>ovs</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   </head>
+	 <body>
+
+     	 <div class="jumbotron">
+     	 	<h1 class="text-center"> choose your candidate</h1>
+     	 </div>
+     .<div class="container">
+     	
+      	<h2><u><font color=red>List is given below</u></h2><br>
+	<font color=black>
+		<table border="1" cellpadding="10" class="table table-striped">
+ 
+        <tr>
+            <td><h2>1</h2></td>
+            <td><h2>candidate 1</h2></td>
+            <td><h2>BJP</h2></td>
+            <td><img src="bjp.jpg"></td>
+            <td>
+            	<button class="btn btn-success"  onclick="add(bjp)">vote</button>
+            	<h2 id="bjp" >0</h2>
+            </td>
+        </tr>
+        <tr>
+            <td><h2>2</h2></td>
+            <td><h2>candidate 2</h2></td>
+            <td><h2>CONGRESS</h2></td>
+                <td><img src="congress.png"></td>
+             <td>
+             	<button class="btn btn-success"   onclick="add(congress)">vote</button>
+            	<h2 id="congress">0</h2>
+             </td>
+        </tr>
+        <tr>
+            <td><h2>3</h2></td>
+            <td><h2>candidate 3</h2></td>
+            <td><h2>AAP</h2></td>
+              <td><img src="aap.jpg"></td>
+             <td>
+             	<button class="btn btn-success" onclick="add(aap)">vote</button>
+            	<h2 id="aap">0</h2>
+             </td>
+        </tr>
+    </table>
+     </div>
+    
+    <script>
+	    var b =	document.getElementById('bjp');
+	    var c =	document.getElementById('congress');
+	    var a =	document.getElementById('aap');
+	    function add(param) {
+	    	param.innerHTML = parseInt(param.innerHTML)+1;
+	    }
+    </script>
+ </body>
+	
+</html>
